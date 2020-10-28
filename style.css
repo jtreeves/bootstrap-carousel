@@ -1,0 +1,47 @@
+* {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    background-color: lightgray;
+    border-radius: 10px;
+    gap: 50px;
+    padding: 10px;
+    margin: 50px 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    grid-template-areas: ". box1 ."
+                    "box2 interact box3";
+}
+
+.carousel {
+    margin: 100px;
+}
+
+#box1 {
+    grid-area: box1;
+}
+
+#box2 {
+    grid-area: box2;
+}
+
+#box3 {
+    grid-area: box3;
+}
+
+#box1, #box2, #box3 {
+    font-style: italic;
+}
+
+#interact {
+    grid-area: interact;
+}
+
+img {
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+    object-position: 40% 0%;
+}
