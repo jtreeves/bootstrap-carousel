@@ -6,12 +6,12 @@
 // const text2 = "This device isn\'t a spaceship; it\'s a time machine. It goes backwards, forwards. It takes us to a place where we ache to go again.";
 // const text3 = "It lets us travel in a way a child travels. Round and round, and then back home again. To a place where we know we are loved.";
 
-// setInterval(fill(box1, text1), 1000);
-// setInterval(fill(box2, text2), 5000);
-// setInterval(fill(box3, text3), 5000);
-// setInterval(empty(box1, text1), 5000);
-// setInterval(empty(box2, text2), 5000);
-// setInterval(empty(box3, text3), 5000);
+// setInterval(fill, 1000, box1, text1);
+// // setInterval(fill(box2, text2), 5000);
+// // setInterval(fill(box3, text3), 5000);
+// // setInterval(empty(box1, text1), 5000);
+// // setInterval(empty(box2, text2), 5000);
+// // setInterval(empty(box3, text3), 5000);
 
 // function fill(box, text) {
 //     return box.textContent = text;
@@ -20,3 +20,11 @@
 // function empty(box) {
 //     return box.textContent = '';
 // };
+
+// Building Bootstrap elements from scratch:
+const body = document.querySelector('body');
+const footer = document.createElement('div');
+footer.classList.add('alert', 'alert-info');
+footer.setAttribute('role', 'alert');
+footer.textContent = 'Images from AMC';
+body.appendChild(footer)
